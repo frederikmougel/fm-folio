@@ -8,12 +8,12 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: () => import('../views/HomeView.vue')  // Lazy loaded
     },
     {
       path: '/story',
       name: 'story',
-      component: StoryView
+      component: () => import('../views/StoryView.vue')  // Lazy loaded
     },
 
   ]
