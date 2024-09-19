@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+      --background: 227 100% 6%;
+      --foreground: 197 10% 87%;
+      --muted: 227 12% 15%;
+      --muted-foreground: 227 12% 65%;
+      --popover: 227 100% 3%;
+      --popover-foreground: 197 10% 97%;
+      --card: 227 100% 4%;
+      --card-foreground: 197 10% 92%;
+      --border: 227 90% 11%;
+      --input: 227 90% 14%;
+      --primary: 215 36% 53%;
+      --primary-foreground: 0 0% 100%;
+      --secondary: 215 26% 75%;
+      --secondary-foreground: 215 26% 15%;
+      --accent: 227 100% 21%;
+      --accent-foreground: 227 100% 81%;
+      --destructive: 3 84% 46%;
+      --destructive-foreground: 0 0% 100%;
+      --ring: 215 36% 53%;
+    }
+}
