@@ -13,10 +13,10 @@
                         <GitHub :size="24"/>
                         <span class="text-xs">GitHub</span>
                     </a>
-                    <a href="https://www.instagram.com/mougelfrederik/" aria-label="Instagram" target="_blank" class="flex flex-col items-center gap-1 hover:scale-110 transition-transform" style="color:#ffffff;filter:drop-shadow(0px 0px 10px rgba(250, 250, 250, 0.3))">
+                    <!-- <a href="https://www.instagram.com/mougelfrederik/" aria-label="Instagram" target="_blank" class="flex flex-col items-center gap-1 hover:scale-110 transition-transform" style="color:#ffffff;filter:drop-shadow(0px 0px 10px rgba(250, 250, 250, 0.3))">
                         <Instagram :size="24"/>
                         <span class="text-xs">Instagram</span>
-                    </a>
+                    </a> -->
                 </div>
                 <a class="underline sm:ml-4" href="mailto:frkmougel@gmail.com" aria-label="Email">frkmougel@gmail.com</a>
             </div>

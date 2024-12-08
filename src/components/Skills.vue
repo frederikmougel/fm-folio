@@ -18,7 +18,7 @@
                   <h3 class="font-light">|</h3>
                   <h3>Vue <Vue :size="16" class="inline ml-1" :currentColor="true" /></h3>
                 </div>
-                <h3>Nativescript <Nativescript :size="16" class="inline ml-1" :currentColor="true" /></h3>
+                <h3>NativeScript <Nativescript :size="16" class="inline ml-1" :currentColor="true" /></h3>
               </div>
               <p class="text-sm text-muted-foreground">Using these frameworks, I create custom web and mobile applications to enhance your digital presence.</p>
             </div>

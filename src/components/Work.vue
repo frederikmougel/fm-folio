@@ -2,7 +2,13 @@
     <div class="overflow-hidden">
         <div class="m-auto mb-8">
             <h1 class="text-3xl">My biggest project</h1>
-            <p>I created this app, which now allows me to have the skills to help people with their projects.</p>
+            <p class="pt-1 text-pretty">
+              I created this app with 
+              <span class="highlight"><Vue :size="13" class="inline mr-1"/>Vue.js</span>
+              and
+              <span class="highlight"><Nativescript :size="13" class="inline mr-1"/>NativeScript</span>,
+              which now allows me to have the skills to help people with their projects.
+            </p>
         </div>
         <div>
           <div class="flex flex-col gap-y-5">
@@ -71,10 +77,14 @@
 </template>
 
 <script lang="ts">
+import Applications from '@/assets/icons/Applications.vue';
+import Nativescript from '@/assets/icons/Nativescript.vue';
+import Vue from '@/assets/icons/Vue.vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'Header',
+  components: { Applications, Nativescript, Vue },
   props: [],
   data() {
     return {
