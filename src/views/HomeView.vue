@@ -1,6 +1,7 @@
 <script lang="ts">
 import Badge from '@/components/Badge.vue';
 import Contact from '@/components/Contact.vue';
+import Degree from '@/components/Degree.vue';
 import FooterVue from '@/components/FooterVue.vue';
 import HeaderVue from '@/components/HeaderVue.vue';
 import Hero from '@/components/Hero.vue';
@@ -9,7 +10,7 @@ import Work from '@/components/Work.vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  components: {Badge, Contact, HeaderVue, Hero, Skills, Work, FooterVue},
+  components: {Badge, Contact, HeaderVue, Degree, Hero, Skills, Work, FooterVue},
   data() {
     return {
     };
@@ -37,6 +38,9 @@ export default defineComponent({
 
         <Badge :text="'work'"/>
         <Work />
+
+        <Badge :text="'degrees'"/>
+        <Degree />
         
         <Badge :text="'skills'"/>
         <Skills />

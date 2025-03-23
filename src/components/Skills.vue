@@ -8,13 +8,13 @@
         <div class="m-auto grid grid-cols-1 sm:grid-cols-4 gap-y-3 sm:gap-3 overflow-auto">
             <div class="card p-6 col-span-3 sm:col-span-2 sm:w-full">
               <div class="flex flex-row gap-8 sm:gap-12 justify-center animate-pulse mt-1">
-                <Angular :size="70" />
+                <React :size="70" />
                 <Vue :size="70" />
                 <Nativescript :size="70" />
               </div>
               <div class="mt-4 mb-2 text-lg font-semibold">
                 <div class="flex flex-row gap-4">
-                  <h3>Angular <Angular :size="16" class="inline ml-1" :currentColor="true" /></h3>
+                  <h3>React <React :size="16" class="inline ml-1" :currentColor="true" /></h3>
                   <h3 class="font-light">|</h3>
                   <h3>Vue <Vue :size="16" class="inline ml-1" :currentColor="true" /></h3>
                 </div>
@@ -58,7 +58,7 @@
 </template>
 
 <script lang="ts">
-import Angular from '@/assets/icons/Angular.vue';
+import React from '@/assets/icons/React.vue';
 import Applications from '@/assets/icons/Applications.vue';
 import Deploy from '@/assets/icons/Deploy.vue';
 import ExpressJS from '@/assets/icons/ExpressJS.vue';
@@ -74,7 +74,7 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'Header',
-  components: { Applications, ExpressJS, Linkedin, Nativescript, Vue, Angular, Tailwind, Typescript, Deploy, SocketIO, MongoDB, Firebase },
+  components: { Applications, ExpressJS, Linkedin, Nativescript, Vue, React, Tailwind, Typescript, Deploy, SocketIO, MongoDB, Firebase },
   props: [],
   data() {
     return {
