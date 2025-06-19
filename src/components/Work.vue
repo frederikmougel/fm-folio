@@ -240,16 +240,6 @@
                   playsinline
                   preload="metadata"
                 ></video>
-                <button 
-                  @click="togglePlay($event)"
-                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-black/50 rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"
-                  aria-label="Toggle play/pause"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M19 16 9 12l10-4v8z"/>
-                    <circle cx="12" cy="12" r="10"/>
-                  </svg>
-                </button>
               </div>
             </div>
           </div>
@@ -273,16 +263,6 @@
                   playsinline
                   preload="metadata"
                 ></video>
-                <button 
-                  @click="togglePlay($event)"
-                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-black/50 rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"
-                  aria-label="Toggle play/pause"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M19 16 9 12l10-4v8z"/>
-                    <circle cx="12" cy="12" r="10"/>
-                  </svg>
-                </button>
               </div>
             </div>
           </div>
@@ -360,8 +340,10 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
   name: 'Work',
   data() {
     return {
@@ -495,7 +477,7 @@ export default {
     };
   },
   computed: {
-    activeModalData() {
+    activeModalData(): any {
       return this.projects.find(p => p.id === this.activeModal) || {};
     },
     filteredProjects() {
@@ -529,7 +511,7 @@ export default {
     checkMobile() {
       this.isMobile = window.innerWidth < 768; // md breakpoint
     },
-    openModal(projectId) {
+    openModal(projectId: any) {
       this.activeModal = projectId;
       document.body.style.overflow = 'hidden';
     },
@@ -564,7 +546,7 @@ export default {
   beforeUnmount() {
     window.removeEventListener('resize', this.checkMobile);
   }
-};
+});
 </script>
 
 <style scoped>
