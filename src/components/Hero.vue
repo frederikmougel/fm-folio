@@ -3,7 +3,7 @@
         <div class="flex items-center gap-3 w-fit">
           <div class="w-20 h-20 rounded-full overflow-hidden">
               <img class="object-cover w-full h-full" 
-                  src="../assets/images/pfp.webp"
+                  src="../../../public/images/pfp.webp"
                   width="auto"
                   height="auto"
                   loading="lazy"

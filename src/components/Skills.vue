@@ -9,16 +9,10 @@
             <div class="card p-6 col-span-3 sm:col-span-2 sm:w-full">
               <div class="flex flex-row gap-8 sm:gap-12 justify-center animate-pulse mt-1">
                 <React :size="70" />
-                <Vue :size="70" />
-                <Nativescript :size="70" />
               </div>
               <div class="mt-4 mb-2 text-lg font-semibold">
-                <div class="flex flex-row gap-4">
-                  <h3>React <React :size="16" class="inline ml-1" :currentColor="true" /></h3>
-                  <h3 class="font-light">|</h3>
-                  <h3>Vue <Vue :size="16" class="inline ml-1" :currentColor="true" /></h3>
-                </div>
-                <h3>NativeScript <Nativescript :size="16" class="inline ml-1" :currentColor="true" /></h3>
+                <React :size="20" class="self-center mt-4" :currentColor="true" />
+                <h3 class="mt-1 mb-2 text-lg font-semibold">React / React Native</h3>
               </div>
               <p class="text-sm text-muted-foreground">Using these frameworks, I create custom web and mobile applications to enhance your digital presence.</p>
             </div>
