@@ -111,17 +111,14 @@
 
       <!-- CTA Section -->
       <div class="mt-20 relative overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-purple-500/5 to-blue-500/5"></div>
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.1),transparent_50%)]"></div>
-        
+        <!-- Background Pattern -->        
         <!-- Content -->
-        <div class="relative border border-primary/20 rounded-3xl p-12 backdrop-blur-sm bg-background/50">
+        <div class="relative border border-primary/20 rounded-3xl p-6 md:p-12 backdrop-blur-sm bg-background/50">
           <div class="max-w-3xl mx-auto text-center">
             <!-- Icon -->
-            <div class="mb-6 flex justify-center">
-              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-purple-500/20 flex items-center justify-center border border-primary/30">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+            <div class="mb-4 md:mb-6 flex justify-center">
+              <div class="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-purple-500/20 flex items-center justify-center border border-primary/30">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
                   <path d="M8 2v4"/>
                   <path d="M16 2v4"/>
                   <rect width="18" height="18" x="3" y="4" rx="2"/>
@@ -136,42 +133,42 @@
             </div>
 
             <!-- Title -->
-            <h3 class="text-3xl font-bold mb-4 bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
-              Ready to bring your project to life ?
+            <h3 class="text-2xl md:text-3xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
+              Ready to bring your project to life?
             </h3>
             
             <!-- Description -->
-            <p class="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Let’s work together to create a web solution that perfectly reflects your vision.
+            <p class="text-base md:text-lg text-muted-foreground mb-6 md:mb-8 leading-relaxed">
+              Let's work together to create a web solution that perfectly reflects your vision.
               <span class="text-foreground font-medium">Custom design</span>, 
               <span class="text-foreground font-medium">modern development</span> and 
               <span class="text-foreground font-medium">personalized support</span>.
             </p>
 
             <!-- Stats/Features -->
-            <div class="grid md:grid-cols-3 gap-6 mb-10">
+            <div class="grid grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-10">
               <div class="text-center">
-                <div class="text-2xl font-bold text-primary mb-1">100%</div>
-                <div class="text-sm text-muted-foreground">Tailor-made</div>
+                <div class="text-xl md:text-2xl font-bold text-primary mb-1">100%</div>
+                <div class="text-xs md:text-sm text-muted-foreground">Tailor-made</div>
               </div>
               <div class="text-center">
-                <div class="text-2xl font-bold text-primary mb-1">24h</div>
-                <div class="text-sm text-muted-foreground">First reply</div>
+                <div class="text-xl md:text-2xl font-bold text-primary mb-1">24h</div>
+                <div class="text-xs md:text-sm text-muted-foreground">First reply</div>
               </div>
               <div class="text-center">
-                <div class="text-2xl font-bold text-primary mb-1">∞</div>
-                <div class="text-sm text-muted-foreground">Included support</div>
+                <div class="text-xl md:text-2xl font-bold text-primary mb-1">∞</div>
+                <div class="text-xs md:text-sm text-muted-foreground">Included support</div>
               </div>
             </div>
 
             <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center">
               <button 
                 @click="$emit('scrollToBottom')" 
-                class="group relative px-8 py-4 rounded-xl bg-white/90 text-black hover:text-white hover:bg-primary transition-all duration-300 transform hover:scale-105 font-semibold shadow-lg hover:shadow-xl flex items-center gap-3"
+                class="group relative px-6 py-3 md:px-8 md:py-4 rounded-xl bg-white/90 text-black hover:text-white hover:bg-primary transition-all duration-300 transform hover:scale-105 font-semibold shadow-lg hover:shadow-xl flex items-center gap-2 md:gap-3 text-sm md:text-base"
               >
                 <span>Let's talk about your project</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:translate-x-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:translate-x-1">
                   <path d="M5 12h14"/>
                   <path d="m12 5 7 7-7 7"/>
                 </svg>
@@ -183,160 +180,160 @@
     </div>
 
     <!-- Project Modal -->
-<div 
-  v-if="activeModal"
-  class="fixed inset-0 z-50 overflow-y-auto bg-[#000517]/70 backdrop-blur-md flex items-center justify-center p-4"
-  @click.self="closeModal"
->
-  <div class="border border-muted-foreground/20 bg-accent/5 rounded-2xl max-w-4xl w-full max-h-[95vh] overflow-y-auto shadow-2xl border-2">
-    <!-- Modal Header -->
-    <div class="p-8 border-b border-muted-foreground/20 bg-gradient-to-r from-primary/5 to-purple-500/5">
-      <div class="flex justify-between items-start">
-        <div>
-          <h3 class="text-3xl font-bold mb-3">{{ activeModalData.title }}</h3>
-          <span 
-            :class="[
-              'inline-block px-4 py-2 rounded-full text-sm font-medium',
-              activeModalData.status === 'Completed' 
-                ? 'bg-green-500/20 text-green-600 border border-green-500/30' 
-                : 'bg-yellow-500/20 text-yellow-600 border border-yellow-500/30'
-            ]"
-          >
-            {{ activeModalData.status }}
-          </span>
-        </div>
-        <button @click="closeModal" class="p-2 rounded-xl border border-transparent hover:border-muted-foreground/20 ">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 6 6 18"></path>
-            <path d="m6 6 12 12"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-    
-    <!-- Modal Content -->
-    <div class="p-8 bg-[#000517]/0 backdrop-blur-md flex flex-col flex-1">
-      
-      <!-- Videos Section - Remplacement optimisé des GIFs -->
-      <div v-if="activeModalData.videos && activeModalData.videos.length > 0" class="mb-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          
-          <!-- Mobile Videos (1-2) -->
-          <div v-if="activeModalData.videos.length >= 2" class="space-y-4">
-            <h4 class="text-lg font-semibold text-primary">Mobile</h4>
-            <div class="grid grid-cols-2 gap-4">
-              <div 
-                v-for="(video, index) in activeModalData.videos.slice(0,2)" 
-                :key="`mobile-vid-${index}`"
-                class="rounded-lg overflow-hidden shadow-lg relative"
-              >
-                <video 
-                  :src="video" 
-                  :poster="`/video-posters/${activeModalData.id}-${index+1}.jpg`"
-                  class="w-full h-auto"
-                  autoplay
-                  loop
-                  muted
-                  playsinline
-                  preload="metadata"
-                ></video>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Desktop Videos (3-4) -->
-          <div v-if="activeModalData.videos.length >= 4" class="space-y-4">
-            <h4 class="text-lg font-semibold text-primary">Desktop</h4>
-            <div class="grid grid-cols-1 gap-4">
-              <div 
-                v-for="(video, index) in activeModalData.videos.slice(2,4)" 
-                :key="`desktop-vid-${index}`"
-                class="rounded-lg overflow-hidden shadow-lg relative group"
-              >
-                <video 
-                  :src="video" 
-                  :poster="`/video-posters/${activeModalData.id}-${index+3}.jpg`"
-                  class="w-full h-auto"
-                  autoplay
-                  loop
-                  muted
-                  playsinline
-                  preload="metadata"
-                ></video>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="space-y-6">
-          <div>
-            <h4 class="text-xl font-semibold mb-3 text-primary">Description</h4>
-            <p class="text-muted-foreground leading-relaxed">{{ activeModalData.description }}</p>
-          </div>
-          
-          <div>
-            <h4 class="text-xl font-semibold mb-3 text-primary">Technologies</h4>
-            <div class="flex flex-wrap gap-3">
+    <div 
+      v-if="activeModal"
+      class="fixed inset-0 z-50 overflow-y-auto bg-[#000517]/70 backdrop-blur-md flex items-center justify-center p-4"
+      @click.self="closeModal"
+    >
+      <div class="border border-muted-foreground/20 bg-accent/5 rounded-2xl max-w-4xl w-full max-h-[95vh] overflow-y-auto shadow-2xl border-2">
+        <!-- Modal Header -->
+        <div class="p-8 border-b border-muted-foreground/20 bg-gradient-to-r from-primary/5 to-purple-500/5">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-3xl font-bold mb-3">{{ activeModalData.title }}</h3>
               <span 
-                v-for="tech in activeModalData.technologies" 
-                :key="tech"
-                class="px-4 py-2 rounded-full text-sm bg-secondary text-secondary-foreground font-medium border"
+                :class="[
+                  'inline-block px-4 py-2 rounded-full text-sm font-medium',
+                  activeModalData.status === 'Completed' 
+                    ? 'bg-green-500/20 text-green-600 border border-green-500/30' 
+                    : 'bg-yellow-500/20 text-yellow-600 border border-yellow-500/30'
+                ]"
               >
-                {{ tech }}
+                {{ activeModalData.status }}
               </span>
+            </div>
+            <button @click="closeModal" class="p-2 rounded-xl border border-transparent hover:border-muted-foreground/20 ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Modal Content -->
+        <div class="p-8 bg-[#000517]/0 backdrop-blur-md flex flex-col flex-1">
+          
+          <!-- Videos Section - Remplacement optimisé des GIFs -->
+          <div v-if="activeModalData.videos && activeModalData.videos.length > 0" class="mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+              <!-- Mobile Videos (1-2) -->
+              <div v-if="activeModalData.videos.length >= 2" class="space-y-4">
+                <h4 class="text-lg font-semibold text-primary">Mobile</h4>
+                <div class="grid grid-cols-2 gap-4">
+                  <div 
+                    v-for="(video, index) in activeModalData.videos.slice(0,2)" 
+                    :key="`mobile-vid-${index}`"
+                    class="rounded-lg overflow-hidden shadow-lg relative"
+                  >
+                    <video 
+                      :src="video" 
+                      :poster="`/video-posters/${activeModalData.id}-${index+1}.jpg`"
+                      class="w-full h-auto"
+                      autoplay
+                      loop
+                      muted
+                      playsinline
+                      preload="metadata"
+                    ></video>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Desktop Videos (3-4) -->
+              <div v-if="activeModalData.videos.length >= 4" class="space-y-4">
+                <h4 class="text-lg font-semibold text-primary">Desktop</h4>
+                <div class="grid grid-cols-1 gap-4">
+                  <div 
+                    v-for="(video, index) in activeModalData.videos.slice(2,4)" 
+                    :key="`desktop-vid-${index}`"
+                    class="rounded-lg overflow-hidden shadow-lg relative group"
+                  >
+                    <video 
+                      :src="video" 
+                      :poster="`/video-posters/${activeModalData.id}-${index+3}.jpg`"
+                      class="w-full h-auto"
+                      autoplay
+                      loop
+                      muted
+                      playsinline
+                      preload="metadata"
+                    ></video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="space-y-6">
+              <div>
+                <h4 class="text-xl font-semibold mb-3 text-primary">Description</h4>
+                <p class="text-muted-foreground leading-relaxed">{{ activeModalData.description }}</p>
+              </div>
+              
+              <div>
+                <h4 class="text-xl font-semibold mb-3 text-primary">Technologies</h4>
+                <div class="flex flex-wrap gap-3">
+                  <span 
+                    v-for="tech in activeModalData.technologies" 
+                    :key="tech"
+                    class="px-4 py-2 rounded-full text-sm bg-secondary text-secondary-foreground font-medium border"
+                  >
+                    {{ tech }}
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <h4 class="text-xl font-semibold mb-3 text-primary">Benefits</h4>
+              <ul class="space-y-3">
+                <li v-for="benefit in activeModalData.benefits" :key="benefit" class="flex items-start gap-3 text-muted-foreground">
+                  <div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                  </div>
+                  <span class="leading-relaxed">{{ benefit }}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div v-if="activeModalData.links && activeModalData.links.length > 0" class="mt-8 pt-6 border-t border-muted-foreground/20">
+            <h4 class="text-xl font-semibold mb-4 text-primary">Links</h4>
+            <div class="space-y-2 flex flex-col">
+              <a 
+                v-for="link in activeModalData.links" 
+                :key="link.label"
+                :href="link.url" 
+                target="_blank"
+                class="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-200 group"
+              >
+                <span>{{ link.label }}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="opacity-60 group-hover:opacity-100 transition-opacity">
+                  <path d="M7 17L17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
         
-        <div>
-          <h4 class="text-xl font-semibold mb-3 text-primary">Benefits</h4>
-          <ul class="space-y-3">
-            <li v-for="benefit in activeModalData.benefits" :key="benefit" class="flex items-start gap-3 text-muted-foreground">
-              <div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                  <path d="m9 11 3 3L22 4"></path>
-                </svg>
-              </div>
-              <span class="leading-relaxed">{{ benefit }}</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <div v-if="activeModalData.links && activeModalData.links.length > 0" class="mt-8 pt-6 border-t border-muted-foreground/20">
-        <h4 class="text-xl font-semibold mb-4 text-primary">Links</h4>
-        <div class="space-y-2 flex flex-col">
-          <a 
-            v-for="link in activeModalData.links" 
-            :key="link.label"
-            :href="link.url" 
-            target="_blank"
-            class="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-200 group"
+        <!-- Modal Footer -->
+        <div class="p-8 bg-[#000517]/0 backdrop-blur-md">
+          <button 
+            @click="closeModal"
+            class="w-full py-3 rounded-lg border border-muted-foreground/20 bg-primary/10 hover:bg-primary/20 text-primary transition-colors font-medium"
           >
-            <span>{{ link.label }}</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="opacity-60 group-hover:opacity-100 transition-opacity">
-              <path d="M7 17L17 7"></path>
-              <path d="M7 7h10v10"></path>
-            </svg>
-          </a>
+            Close
+          </button>
         </div>
       </div>
     </div>
-    
-    <!-- Modal Footer -->
-    <div class="p-8 bg-[#000517]/0 backdrop-blur-md">
-      <button 
-        @click="closeModal"
-        class="w-full py-3 rounded-lg border border-muted-foreground/20 bg-primary/10 hover:bg-primary/20 text-primary transition-colors font-medium"
-      >
-        Close
-      </button>
-    </div>
-  </div>
-</div>
   </div>
 </template>
 
